@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #1a1a1a;
+      --accent: #6366f1;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .project {
+      background: white;
+      border-left: 5px solid var(--accent);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background-color: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Researcher | ML Enthusiast | TDA Explorer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a researcher with a strong foundation in mathematics and computer science, exploring the intersection of deep learning and topological data analysis.
+      My work focuses on developing efficient neural network models and interpreting training dynamics using contour trees and persistent homology.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>A Novel Feature Extraction Model for Plant Disease Detection</h3>
+      <p>Presented at ICSTA'23, this lightweight model detects plant diseases using leaf images optimized for low-computation devices.</p>
+      <a href="https://github.com/yourusername/plant-disease-detector" class="button" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project">
+      <h3>Contour Tree Analysis of Loss Landscapes</h3>
+      <p>Studying the topology of neural network loss surfaces using join and split trees to improve model training insights and robustness.</p>
+      <a href="https://github.com/yourusername/contour-tree-analysis" class="button" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Add more projects as needed -->
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you're interested in collaborating or learning more about my work, feel free to reach out:</p>
+    <ul>
+      <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
