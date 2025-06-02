@@ -72,27 +72,109 @@
       text-decoration: none;
       font-weight: 600;
     }
+
+    #contact a img {
+  transition: transform 0.2s ease, filter 0.3s;
+}
+#contact a:hover img {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+}
   </style>
 </head>
 <body>
 
   <header>
     <h1>Rikathi Pal</h1>
-    <p>Researcher | ML Enthusiast | TDA Explorer</p>
+    <!-- <p>Researcher | ML Enthusiast | TDA Explorer</p> -->
     <nav>
       <a href="#about">About</a>
+      <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
+
+ <section id="about" style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
+  <!-- Profile Image + Contact Icons -->
+  <div style="flex: 1; min-width: 200px; text-align: center;">
+    <img src="rikathi.jpg" alt="Profile" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;">
+    
+    <!-- Contact Icons -->
+    <div style="margin-top: 1.5rem;">
+      <p style="font-weight: 600;">Get in Touch:</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+        <a href="mailto:rikathi.pal@gmail.com" target="_blank" title="Email">
+          <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" width="30" height="30"/>
+        </a>
+        <a href="https://scholar.google.com/citations?user=8riN4uMAAAAJ&hl=en" target="_blank" title="Google Scholar">
+          <img src="https://img.icons8.com/ios-filled/50/000000/google-scholar.png" alt="Google Scholar" width="30" height="30"/>
+        </a>
+        <a href="https://github.com/Rikathi" target="_blank" title="GitHub">
+          <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" alt="GitHub" width="30" height="30"/>
+        </a>
+        <a href="https://www.linkedin.com/in/rikathi-pal-a0b10820b/" target="_blank" title="LinkedIn">
+          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" width="30" height="30"/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Text -->
+  <div style="flex: 2; min-width: 300px;">
     <h2>About Me</h2>
     <p>
-      I’m a researcher with a strong foundation in mathematics and computer science, exploring the intersection of deep learning and topological data analysis.
-      My work focuses on developing efficient neural network models and interpreting training dynamics using contour trees and persistent homology.
+      I am a Pre-Doctoral Research Fellow in the <a href="https://vgl.csa.iisc.ac.in/" target="_blank" class="link-underline">Visualization and Graphics Lab (VGL Lab)</a> of the <a href="https://www.csa.iisc.ac.in/" target="_blank" class="link-underline">Department of Computer Science and Automation</a> at the <a href="https://iisc.ac.in/" target="_blank" class="link-underline">Indian Institute of Science (IISc), Bengaluru</a>, under the guidance of <a href="https://www.csa.iisc.ac.in/~vijayn/" target="_blank" class="link-underline">Prof. Vijay Natarajan</a>.<br>
+      I received a B.Tech in Information Technology from the <a href="https://www.caluniv.ac.in/academic/akcsit/AKC.html" target="_blank" class="link-underline">A.K.C.S.I.T. Department</a> of the <a href="https://www.caluniv.ac.in/campuses/campus-8.html" target="_blank" class="link-underline">University of Calcutta, Kolkata</a>. During my undergraduate studies, I worked under the guidance of <a href="https://sites.google.com/caluniv.ac.in/amlanc-org" target="_blank" class="link-underline">Prof. Amlan Chakrabarti</a>.<br>
+      I also completed an internship at the <a href="https://miu.isical.ac.in/content/machine-intelligence-unit" target="_blank" class="link-underline">Machine Intelligence Unit (MIU)</a> of the <a href="https://www2.isical.ac.in/" target="_blank" class="link-underline">Indian Statistical Institute (ISI), Kolkata</a>, where I was mentored by <a href="https://isi.irins.org/profile/111427" target="_blank" class="link-underline">Prof. Ashish Ghosh</a>.<br>
+      My research interests include computer vision, medical image processing, computational topology, and visualization.
     </p>
-  </section>
+  </div>
+</section>
+
+
+
+<section id="publications" style="margin-top: 3rem;">
+  <h2>Publications</h2>
+
+  <!-- Publication 3 -->
+  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <img src="cell.jpg" alt="segmentation" style="width: 120px; height: 120px; object-fit: cover; border-radius: 6px;">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Medical Image Segmentation Using Advanced Attention UNet</h3>
+      <p><strong>Rikathi Pal</strong>, Somoballi Ghoshal, Amlan Chakrabarti</p>
+      <p><strong>Conference:</strong> ICDMAI 2025</p>
+      <p style="color: #008000;"><em>🏆 2nd Best Paper Award</em></p>
+    </div>
+  </div>
+
+  <!-- Publication 2 -->
+  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <img src="leaf.jpg" alt="MobileResNet" style="width: 120px; height: 120px; object-fit: cover; border-radius: 6px;">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">MobileResNet: A Generalized Lightweight Model for Accurate Leaf Disease Detection Across Diverse Plant Types</h3>
+      <p><strong>Rikathi Pal</strong>, Somoballi Ghoshal, Amlan Chakrabarti</p>
+      <p><strong>Conference:</strong> INDICON 2024</p>
+    </div>
+  </div>
+
+  <!-- Publication 1 -->
+  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <img src="leaf2.jpeg" alt="Leaf_Feature" style="width: 120px; height: 120px; object-fit: cover; border-radius: 6px;">
+    <div style="flex: 1;">
+      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">A Novel Feature Extraction Model for the Detection of Plant Disease from Leaf Images in Low Computational Devices</h3>
+      <p><strong>Rikathi Pal</strong>, Anik Basu Bhaumik, Arpan Murmu, Sanoar Hossain, Biswajit Maity, Soumya Sen</p>
+      <p><strong>Conference:</strong> ICSTA 2023</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
   <section id="projects">
     <h2>Projects</h2>
@@ -115,33 +197,7 @@
 
 
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>If you're interested in collaborating or learning more about my work, feel free to reach out:</p>
-  <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
-    
-    <!-- Email -->
-    <a href="mailto:rikathi.pal@gmail.com" target="_blank" title="Email">
-      <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" width="40" height="40"/>
-    </a>
 
-    <!-- Google Scholar -->
-    <a href="https://scholar.google.com/citations?user=8riN4uMAAAAJ&hl=en" target="_blank" title="Google Scholar">
-      <img src="https://img.icons8.com/ios-filled/50/000000/google-scholar.png" alt="Google Scholar" width="40" height="40"/>
-    </a>
-
-    <!-- GitHub -->
-    <a href="https://github.com/Rikathi" target="_blank" title="GitHub">
-      <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" alt="GitHub" width="40" height="40"/>
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/rikathi-pal-a0b10820b/" target="_blank" title="LinkedIn">
-      <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" width="40" height="40"/>
-    </a>
-
-  </div>
-</section>
 
 
 
