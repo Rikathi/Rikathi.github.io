@@ -1,382 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rikathi Pal | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rikathi Pal | About</title>
   <link rel="icon" href="images/RP.jpg" sizes="1000x1200" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f9f9f9;
-      --text: #1a1a1a;
-      --accent: #6366f1;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 2rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: var(--accent);
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-    }
-  .project {
-    background: white;
-    border-left: 5px solid var(--accent);
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .project:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 0.5rem;
-      background-color: var(--accent);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 2rem 0 1rem;
-  color: #112760;
-  /* var(--accent); */
-}
-
-    h1 {
-  font-size: 2.5rem;
-  /* text-align: center; */
-  margin: 2rem 0 1rem;
-  color: #112760;
-  /* var(--accent); */
-}
-
-
-    #contact a img {
-  transition: transform 0.2s ease, filter 0.3s;
-}
-#contact a:hover img {
-  transform: scale(1.15);
-  filter: brightness(1.3);
-}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/2.jpg" alt="Rikathi Pal logo">
+        <span>RIKATHI PAL</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="scholarship-award.html">Scholarship/Award</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main class="site-shell">
+    <section class="hero">
+      <div class="hero-panel">
+        <div class="hero-photo">
+          <img src="images/rip.jpg" alt="Portrait of Rikathi Pal">
+        </div>
+        <div class="hero-copy">
+          <h1>Rikathi Pal</h1>
+          <p class="hero-role">
+            <strong>Computer Science Ph.D. Candidate,</strong><br>
+            Stony Brook University, NY, USA<br>
+            <a href="mailto:ripal@cs.stonybrook.edu">ripal@cs.stonybrook.edu</a>
+          </p>
+          <ul class="hero-links">
+            <li><a href="mailto:rikathi.pal@gmail.com">Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=8riN4uMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a></li>
+            <li><a href="https://github.com/Rikathi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/rikathi-pal-a0b10820b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <section class="content-section">
+      <h2 class="section-heading">About Me</h2>
+      <div class="about-text">
+        <p>
+          I am a Ph.D. candidate in <a href="https://www.cs.stonybrook.edu/" target="_blank" rel="noopener noreferrer">Computer Science at Stony Brook University</a>, working in the <a href="https://www3.cs.stonybrook.edu/~mueller/#projects" target="_blank" rel="noopener noreferrer">Visual Analytics and Imaging Lab (VAI Lab)</a> under the guidance of <a href="https://www.cs.stonybrook.edu/people/faculty/klausmueller" target="_blank" rel="noopener noreferrer">Prof. Klaus Mueller</a>. My research focuses on developing explainable and trustworthy AI systems for medical imaging, with the goal of bridging the gap between advanced machine learning models and real-world clinical adoption. By combining deep learning, visualization, and interpretable AI techniques, I aim to create intelligent medical imaging systems that not only achieve high performance, but also provide transparent and reliable insights that clinicians can confidently trust in critical healthcare decision-making.
+        </p>
+        <p>
+          I was a Pre-Doctoral Research Fellow in the <a href="https://vgl.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Visualization and Graphics Lab (VGL Lab)</a> of the
+          <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Department of Computer Science and Automation</a> at the
+          <a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science (IISc), Bengaluru</a>, under the guidance of
+          <a href="https://www.csa.iisc.ac.in/~vijayn/" target="_blank" rel="noopener noreferrer">Prof. Vijay Natarajan</a>.
+        </p>
+        <p>
+          I completed my B.Tech in Information Technology from the
+          <a href="https://www.caluniv.ac.in/academic/akcsit/AKC.html" target="_blank" rel="noopener noreferrer">A.K.C.S.I.T. Department</a> of the
+          <a href="https://www.caluniv.ac.in/campuses/campus-8.html" target="_blank" rel="noopener noreferrer">University of Calcutta, Kolkata</a>. During my undergraduate studies, I worked under the guidance of
+          <a href="https://sites.google.com/caluniv.ac.in/amlanc-org" target="_blank" rel="noopener noreferrer">Prof. Amlan Chakrabarti</a>.
+        </p>
+        <p>
+          I also completed a research internship at the
+          <a href="https://miu.isical.ac.in/content/machine-intelligence-unit" target="_blank" rel="noopener noreferrer">Machine Intelligence Unit (MIU)</a> of the
+          <a href="https://www2.isical.ac.in/" target="_blank" rel="noopener noreferrer">Indian Statistical Institute (ISI), Kolkata</a>, where I was mentored by
+          <a href="https://isi.irins.org/profile/111427" target="_blank" rel="noopener noreferrer">Prof. Ashish Ghosh</a>.
+        </p>
+        <p>
+          My research interests include Computer Vision, Medical Image Processing, Computational Topology, Explainable AI,and Visualization.
+        </p>
+      </div>
+    </section>
+  </main>
 
-  
+  <footer>
+    <div class="footer-panel">
+      <div>
+        <p class="footer-title">Research Snapshot</p>
+        <p class="footer-copy">
+          I develop explainable and trustworthy AI systems for medical imaging, focusing on interpretable deep learning, medical image synthesis, and visualization. My work aims to bridge advanced AI research with clinically reliable decision-making to support real-world healthcare applications.
 
-<header style="background-color: #1e1e2f; padding: 1.5rem 0;">
-  <h1 style="color: #ffffff; text-align: center; margin: 0;">RIKATHI PAL</h1>
-  <!-- <p>Researcher | ML Enthusiast | TDA Explorer</p> -->
-  <nav style="margin-top: 1rem;">
-    <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-      <li><a href="#about">About</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#experience">Experiences</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <style>
-    nav ul li a {
-      text-decoration: none;
-      color: #e0e0e0;
-      font-weight: 500;
-      position: relative;
-      padding: 0.25rem 0;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 100%;
-      height: 2px;
-      background-color: #00bfa6; /* Teal accent */
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.3s ease;
-    }
-
-    nav ul li a:hover::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-
-    nav ul li a:hover {
-      color: #00bfa6; /* Match underline color */
-    }
-  </style>
-</header>
-
-
-
-<section id="about" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem;">
-  <!-- Profile Image + Contact Icons -->
-  <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; align-items: center; margin-top: 5rem;">
-    <img src="images/rip.jpg" alt="Profile" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border: 2px solid #ccc;">
-    
-    <!-- Contact Icons -->
-    <div style="margin-top: 1.5rem; text-align: center;">
-      <p style="font-weight: 600;">Get in Touch:</p>
-      <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
-        <a href="mailto:rikathi.pal@gmail.com" target="_blank" title="Email">
-          <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" width="30" height="30"/>
-        </a>
-        <a href="https://scholar.google.com/citations?user=8riN4uMAAAAJ&hl=en" target="_blank" title="Google Scholar">
-          <img src="https://img.icons8.com/ios-filled/50/000000/google-scholar.png" alt="Google Scholar" width="30" height="30"/>
-        </a>
-        <a href="https://github.com/Rikathi" target="_blank" title="GitHub">
-          <img src="https://img.icons8.com/ios-glyphs/50/000000/github.png" alt="GitHub" width="30" height="30"/>
-        </a>
-        <a href="https://www.linkedin.com/in/rikathi-pal-a0b10820b/" target="_blank" title="LinkedIn">
-          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" width="30" height="30"/>
-        </a>
+        </p>
+      </div>
+      <div class="footer-meta">
+        <p><strong>Current Focus:</strong> Topological analysis of deep learning systems</p>
+        <p><strong>Based In:</strong> Stony Brook, New York</p>
+        <p><strong>Contact:</strong> <a href="mailto:ripal@cs.stonybrook.edu">ripal@cs.stonybrook.edu</a></p>
       </div>
     </div>
-  </div>
-
-  <!-- About Text -->
-  <div style="flex: 2; min-width: 300px;">
-    <h1>About Me</h1>
-    <p>
-      I am a Pre-Doctoral Research Fellow in the <a href="https://vgl.csa.iisc.ac.in/" target="_blank" class="link-underline">Visualization and Graphics Lab (VGL Lab)</a> of the <a href="https://www.csa.iisc.ac.in/" target="_blank" class="link-underline">Department of Computer Science and Automation</a> at the <a href="https://iisc.ac.in/" target="_blank" class="link-underline">Indian Institute of Science (IISc), Bengaluru</a>, under the guidance of <a href="https://www.csa.iisc.ac.in/~vijayn/" target="_blank" class="link-underline">Prof. Vijay Natarajan</a>.<br>
-      I completed my B.Tech in Information Technology from the <a href="https://www.caluniv.ac.in/academic/akcsit/AKC.html" target="_blank" class="link-underline">A.K.C.S.I.T. Department</a> of the <a href="https://www.caluniv.ac.in/campuses/campus-8.html" target="_blank" class="link-underline">University of Calcutta, Kolkata</a>. During my undergraduate studies, I worked under the guidance of <a href="https://sites.google.com/caluniv.ac.in/amlanc-org" target="_blank" class="link-underline">Prof. Amlan Chakrabarti</a>.<br>
-      I also completed a research internship at the <a href="https://miu.isical.ac.in/content/machine-intelligence-unit" target="_blank" class="link-underline">Machine Intelligence Unit (MIU)</a> of the <a href="https://www2.isical.ac.in/" target="_blank" class="link-underline">Indian Statistical Institute (ISI), Kolkata</a>, where I was mentored by <a href="https://isi.irins.org/profile/111427" target="_blank" class="link-underline">Prof. Ashish Ghosh</a>.<br>
-      My research interests include computer vision, medical image processing, computational topology, and visualization.
-    </p>
-  </div>
-</section>
-
-
-
-
-
-<section id="publications" style="margin-top: 3rem;">
-  <h2>Publications</h2>
-
-  <!-- Publication 3 -->
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; position: relative;">
-    <img src="images/cell.jpg" alt="segmentation" style="width: 120px; height: 120px; object-fit: cover; border-radius: 6px;">
-    <div style="flex: 1; position: relative;">
-      <a href="pdfs/Medical_Image_Segmentation_Using_Advanced_UNet.pdf" target="_blank" style="position: absolute; top: 0; right: 0; font-size: 0.9rem; text-decoration: none; color: #007bff;">📄 PDF</a>
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Medical Image Segmentation Using Advanced Attention UNet</h3>
-      <p><strong>Rikathi Pal</strong>, Somoballi Ghoshal, Amlan Chakrabarti</p>
-      <p><strong>Conference:</strong> ICDMAI 2025</p>
-      <p style="color: #e10f47;">🏆<em> 2nd Best Paper Award</em></p>
-    </div>
-  </div>
-
-  <!-- Publication 2 -->
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; position: relative;">
-    <img src="images/leaf.jpg" alt="MobileResNet" style="width: 120px; height: 120px; object-fit: cover; border-radius: 6px;">
-    <div style="flex: 1; position: relative;">
-      <a href="https://ieeexplore.ieee.org/document/10958458" target="_blank" style="position: absolute; top: 0; right: 0; font-size: 0.9rem; text-decoration: none; color: #007bff;">📄 PDF</a>
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">MobileResNet: A Generalized Lightweight Model for Accurate <br>Leaf Disease Detection Across Diverse Plant Types</h3>
-      <p><strong>Rikathi Pal</strong>, Somoballi Ghoshal, Amlan Chakrabarti</p>
-      <p><strong>Conference:</strong> INDICON 2024</p>
-    </div>
-  </div>
-
-  <!-- Publication 1 -->
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; position: relative;">
-    <img src="images/leaf2.jpeg" alt="Leaf_Feature" style="width: 120px; height: 120px; object-fit: cover; border-radius: 6px;">
-    <div style="flex: 1; position: relative;">
-      <a href="https://link.springer.com/chapter/10.1007/978-981-97-5157-0_32" target="_blank" style="position: absolute; top: 0; right: 0; font-size: 0.9rem; text-decoration: none; color: #007bff;">📄 PDF</a>
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">A Novel Feature Extraction Model for the Detection of Plant <br> Disease from Leaf Images in Low Computational Devices</h3>
-      <p><strong>Rikathi Pal</strong>, Anik Basu Bhaumik, Arpan Murmu, Sanoar Hossain, Biswajit Maity, Soumya Sen</p>
-      <p><strong>Conference:</strong> ICSTA 2023</p>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<section id="experience" style="margin-top: 3rem;">
-  <h2>Experience</h2>
-
-<!-- Experience 2 -->
-<div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-  <img src="images/iisc.png" alt="IISc" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-  <div style="flex: 1;">
-    <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Visualization and Graphics Lab, Indian Institute of Science (IISc). Bengaluru</h3>
-    <p><strong>Role:</strong> Pre-Doctoral Research Fellow</p>
-    <p><strong>Duration:</strong> July 2024 – Present</p>
-    <p>— Neural Network Loss Landscape Visualization Using Topological Data Analysis </p>
-  </div>
-</div>
-
-
- <!-- Experience 1 -->
-<div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-  <img src="images/isi.png" alt="isi" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-  <div style="flex: 1;">
-    <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Indian Statistical Institute (ISI), Kolkata</h3>
-    <p><strong>Role:</strong> Research Intern</p>
-    <p><strong>Duration:</strong> May 2023 – Nov 2023 </p>
-    <p>— ACEV: Unsupervised Segmentation of Intersecting Manifolds in High-Dimensional Spaces</p>
-  </div>
-</div>
-
-</section>
-
-
-
-
-
-
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-    <img src="images/iisc.png" alt="iisc" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-    <div style="flex: 1;">
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Topological Analysis of Loss Landscapes in Neural Networks</h3>
-      <p><strong>Institute:</strong> Indian Institute of Science (IISc), Bangalore</p>
-      <p><strong>Duration:</strong> Jul 2024 – Present</p>
-      <p><strong>Supervisor:</strong> Prof. Vijay Natarajan</p>
-      <p>Analyzed the loss landscape of neural network training using topological data analysis techniques such as contour trees, join trees, and split tree simplification to interpret training dynamics.</p>
-      <!-- <a href="https://github.com/yourusername/contour-tree-analysis" class="button" target="_blank">View on GitHub</a> -->
-    </div>
-  </div>
-
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-    <img src="images/isi.png" alt="isi" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-    <div style="flex: 1;">
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">ACEV: Unsupervised Segmentation of Intersecting Manifolds</h3>
-      <p><strong>Institute:</strong> Indian Statistical Institute (ISI), Kolkata</p>
-      <p><strong>Duration:</strong> May 2023 – Nov 2023</p>
-      <p><strong>Supervisor:</strong> Prof. Ashish Ghosh</p>
-      <p>Developed an unsupervised segmentation method using eigenvector variation across intrinsic dimensions to distinguish intersecting manifolds in high-dimensional data.</p>
-      <a href="https://github.com/Rikathi/ACEV_ISI" class="button" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-    <img src="images/cu.png" alt="calcutta" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-    <div style="flex: 1;">
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Lumbar Spine Tumor Localization from MRI Images</h3>
-      <p><strong>Institute:</strong> University of Calcutta (AKCSIT Department)</p>
-      <p><strong>Duration:</strong> Sept 2023 – Oct 2024</p>
-      <p><strong>Supervisor:</strong> Prof. Amlan Chakrabarti</p>
-      <p>Segmented and localized lumbar spine tumors from T2-weighted MRI scans using deep learning-based medical image analysis techniques.</p>
-      <a href="https://drive.google.com/drive/folders/1iMEE_1tbwyjkoo-hJpjZtAnHQ9CqS2J9?usp=sharing" class="button" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-    <img src="images/cu.png" alt="calcutta" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-    <div style="flex: 1;">
-      <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; color: #333;">Lightweight Leaf Disease Detection for Edge Devices</h3>
-      <p><strong>Institute:</strong> University of Calcutta (AKCSIT Department)</p>
-      <p><strong>Duration:</strong> Apr 2023 – Feb 2024</p>
-      <p><strong>Supervisor:</strong> Prof. Soumya Sen</p>
-      <p>Designed a novel lightweight feature extraction model to detect plant diseases from leaf images, optimized for low-computation environments. Presented at ICSTA’23.</p>
-      <a href="https://github.com/Rikathi/Leaf_Disease_Detection1" class="button" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-</section>
-
-</section>
-
-
-
-<section id="education">
-  <h2>Education</h2>
-
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-    <img src="images/cu.png" alt="University of Calcutta" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-    <div style="flex: 1;">
-      <h3 style="margin: 0 0 0.3rem 0; font-size: 1.1rem; color: #333;">B.Tech in Information Technology</h3>
-      <p><strong>Institute:</strong> A.K. Choudhury School of Information Technology, <br>University of Calcutta, Kolkata, West Bengal</p>
-      <p><strong>Year:</strong> 2020 – 2024</p>
-      <!-- <p><strong>Performance:</strong> 3rd in Class &nbsp;&nbsp;|&nbsp;&nbsp; <strong>CGPA:</strong> 9.26/10</p> -->
-    </div>
-  </div>
-
-  <div class="project" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-    <img src="images/dav.png" alt="DAV Model School" style="width: 120px; height: 120px; object-fit: contain; border-radius: 6px;">
-    <div style="flex: 1;">
-      <h3 style="margin: 0 0 0.3rem 0; font-size: 1.1rem; color: #333;">Higher Secondary Education</h3>
-      <p><strong>Institute:</strong> DAV Model School, Durgapur, West Bengal</p>
-      <p><strong>Year:</strong> 2020</p>
-      <!-- <p><strong>Subjects:</strong> English, Physics, Chemistry, Mathematics, Computer Science</p> -->
-      <!-- <p><strong>Performance:</strong> 4th in Class &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Percentage:</strong> 93.4%</p> -->
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-  <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=350&t=n&d=HE2tXlY869zV4HPj5lk-lshe2ohdD3_nYe4YXJt3rLQ'></script>
-
-<footer style="background-color: #1e1e2f; color: #e0e0e0; text-align: center; padding: 1rem 0; margin-top: 2rem;">
-  &copy; 2025 Rikathi Pal. All rights reserved.
-</footer>
-
-
+    <p class="footer-bottom">&copy; 2025 Rikathi Pal. All rights reserved.</p>
+  </footer>
 </body>
 </html>
