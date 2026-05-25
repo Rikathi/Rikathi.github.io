@@ -471,6 +471,12 @@ h1 {
   color: #5f4527;
 }
 
+.author-highlight {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 1.5px;
+}
+
 .award-card {
   grid-template-columns: 220px minmax(0, 1fr) auto;
   align-items: center;
