@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rikathi.github.io/sitemap.xml
