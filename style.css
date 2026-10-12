@@ -528,6 +528,22 @@ h1 {
   padding: 0.6rem;
 }
 
+.project-card {
+  grid-template-columns: 160px minmax(0, 1fr);
+  align-items: center;
+}
+
+.project-card img {
+  width: 160px;
+  height: 125px;
+}
+
+.project-card img.project-figure-crop {
+  object-fit: cover;
+  object-position: left center;
+  padding: 0;
+}
+
 .entry-meta {
   display: flex;
   flex-wrap: wrap;
