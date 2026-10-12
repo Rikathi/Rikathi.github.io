@@ -921,6 +921,17 @@ h1 {
   font-weight: 600;
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.project-actions .entry-link {
+  margin-top: 0.75rem;
+}
+
 .award {
   color: #aa2c3c;
   font-weight: 700;
