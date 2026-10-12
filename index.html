@@ -96,8 +96,10 @@
   <main class="site-shell">
     <section class="hero">
       <div class="hero-panel">
-        <div class="hero-photo">
-          <img src="images/rip.jpg" alt="Portrait of Rikathi Pal">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <img src="images/rip.jpg" alt="Portrait of Rikathi Pal">
+          </div>
         </div>
         <div class="hero-copy">
           <h1>Rikathi Pal</h1>
@@ -106,42 +108,137 @@
             Stony Brook University, NY, USA<br>
             <a href="mailto:ripal@cs.stonybrook.edu">ripal@cs.stonybrook.edu</a>
           </p>
-          <ul class="hero-links">
-            <li><a href="mailto:rikathi.pal@gmail.com">Email</a></li>
-            <li><a href="https://scholar.google.com/citations?user=8riN4uMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a></li>
-            <li><a href="https://github.com/Rikathi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/rikathi-pal-a0b10820b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <ul class="hero-icons" aria-label="Contact links">
+            <li>
+              <a href="mailto:ripal@cs.stonybrook.edu" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.9-.25 7.1 5.43 7.1-5.43H4.9Zm14.6 11V8.39l-6.9 5.28a1 1 0 0 1-1.2 0L4.5 8.39v9.11h15Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=8riN4uMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-6.5 8.72L12 15.33l6.5-3.61V16c0 2.76-2.91 5-6.5 5s-6.5-2.24-6.5-5v-4.28ZM21 18.5a1 1 0 1 1-2 0v-7h2v7Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Rikathi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.87 8.31 6.84 9.66.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.52 1.04 1.52 1.04.88 1.55 2.31 1.1 2.87.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.42.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.22C22 6.58 17.52 2 12 2Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rikathi-pal-a0b10820b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44ZM5.5 10h2.88v8.5H5.5V10Zm4.68 0h2.76v1.16h.04c.38-.72 1.32-1.48 2.72-1.48 2.92 0 3.46 1.95 3.46 4.48v4.34h-2.88v-3.85c0-.92-.02-2.1-1.27-2.1-1.28 0-1.48 1.01-1.48 2.03v3.92h-2.88V10Z"/></svg>
+              </a>
+            </li>
           </ul>
+        </div>
+        <div class="hero-news" id="news" aria-labelledby="news-title">
+          <div class="news-heading">
+            <div>
+              <p class="news-eyebrow">Latest updates</p>
+              <h2 id="news-title">News</h2>
+            </div>
+            <p class="news-scroll-note" id="news-scroll-note">
+              <span aria-hidden="true">&#8595;</span> Scroll
+            </p>
+          </div>
+
+          <div class="news-list" role="region" tabindex="0" aria-label="News updates" aria-describedby="news-scroll-note">
+            <article class="news-item">
+              <time datetime="2026">2026</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Service</span>
+                <h3>IEEE VIS 2026 Student Volunteer</h3>
+                <p>Selected to support the IEEE Visualization Conference as part of its student volunteer team.</p>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2026">2026</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Poster</span>
+                <h3>Poster Accepted at IEEE VIS 2026</h3>
+                <p>My research poster has been accepted for presentation at the IEEE Visualization Conference.</p>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2025">2025</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Scholarship</span>
+                <h3>Hagan International Scholarship Recipient</h3>
+                <p>Awarded by the Hagan Scholarship Foundation for the 2025&ndash;2027 period.</p>
+                <a href="scholarship-award.html">View award <span aria-hidden="true">&#8594;</span></a>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2025">2025</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Education</span>
+                <h3>Started Ph.D. at Stony Brook University</h3>
+                <p>Began my Ph.D. in Computer Science at Stony Brook University.</p>
+                <a href="education.html">View education <span aria-hidden="true">&#8594;</span></a>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2025">2025</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Publication</span>
+                <h3>Spinal Tumor Research at NCVPRIPG 2025</h3>
+                <p><em>A Classifier for Spinal Tumors Using Novel Data Augmentation</em> appears in the portfolio publication list.</p>
+                <a href="publications.html">View paper <span aria-hidden="true">&#8594;</span></a>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2025">2025</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Award</span>
+                <h3>2nd Best Paper Award at ICDMAI 2025</h3>
+                <p>Recognized for <em>Medical Image Segmentation Using Advanced Attention UNet</em>.</p>
+                <a href="scholarship-award.html">View award <span aria-hidden="true">&#8594;</span></a>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2024-07">Jul 2024</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Experience</span>
+                <h3>Joined IISc as a Pre-Doctoral Research Fellow</h3>
+                <p>Worked in the Visualization and Graphics Lab on neural-network loss landscape visualization using topological data analysis.</p>
+                <a href="experience.html">View experience <span aria-hidden="true">&#8594;</span></a>
+              </div>
+            </article>
+
+            <article class="news-item">
+              <time datetime="2024">2024</time>
+              <div class="news-item-copy">
+                <span class="news-tag">Education</span>
+                <h3>Completed B.Tech. at the University of Calcutta</h3>
+                <p>Earned my B.Tech. in Information Technology from the A.K.C.S.I.T. Department.</p>
+                <a href="education.html">View education <span aria-hidden="true">&#8594;</span></a>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section">
-      <h2 class="section-heading">About Me</h2>
-      <div class="about-text">
-        <p>
-          I am a Ph.D. candidate in <a href="https://www.cs.stonybrook.edu/" target="_blank" rel="noopener noreferrer">Computer Science at Stony Brook University</a>, working in the <a href="https://www3.cs.stonybrook.edu/~mueller/#projects" target="_blank" rel="noopener noreferrer">Visual Analytics and Imaging Lab (VAI Lab)</a> under the guidance of <a href="https://www.cs.stonybrook.edu/people/faculty/klausmueller" target="_blank" rel="noopener noreferrer">Prof. Klaus Mueller</a>. My research focuses on developing explainable and trustworthy AI systems for medical imaging, with the goal of bridging the gap between advanced machine learning models and real-world clinical adoption. By combining deep learning, visualization, and interpretable AI techniques, I aim to create intelligent medical imaging systems that not only achieve high performance, but also provide transparent and reliable insights that clinicians can confidently trust in critical healthcare decision-making.
+    <section class="about-section" aria-labelledby="about-title">
+      <h2 class="about-section-title" id="about-title">About Me</h2>
+      <div class="about-text about-section-copy">
+        <p class="about-lead">
+          I am a <strong>Computer Science Ph.D. candidate at <a href="https://www.cs.stonybrook.edu/" target="_blank" rel="noopener noreferrer">Stony Brook University</a></strong> and a researcher in the <a href="https://www3.cs.stonybrook.edu/~mueller/#projects" target="_blank" rel="noopener noreferrer">Visual Analytics and Imaging Lab (VAI Lab)</a>, advised by <a href="https://www.cs.stonybrook.edu/people/faculty/klausmueller" target="_blank" rel="noopener noreferrer">Prof. Klaus Mueller</a>. I develop <strong>explainable, trustworthy, and clinically grounded AI systems</strong> for medical imaging, with an emphasis on turning advanced machine-learning research into transparent and reliable tools for healthcare decision-making.
         </p>
         <p>
-          I was a Pre-Doctoral Research Fellow in the <a href="https://vgl.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Visualization and Graphics Lab (VGL Lab)</a> of the
-          <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Department of Computer Science and Automation</a> at the
-          <a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science (IISc), Bengaluru</a>, under the guidance of
-          <a href="https://www.csa.iisc.ac.in/~vijayn/" target="_blank" rel="noopener noreferrer">Prof. Vijay Natarajan</a>.
+          My technical work spans <strong>deep learning, computer vision, diffusion models, manifold learning, topological data analysis, and scientific visualization</strong>. My current research includes anatomy-aware and pathology-controlled diffusion for 3D lung CT synthesis, along with geometric and topological analysis of latent representations learned from real and synthetic medical images. Through this work, I investigate not only model performance, but also anatomical fidelity, interpretability, controllability, and the trustworthiness of AI-generated medical data.
         </p>
         <p>
-          I completed my B.Tech in Information Technology from the
-          <a href="https://www.caluniv.ac.in/academic/akcsit/AKC.html" target="_blank" rel="noopener noreferrer">A.K.C.S.I.T. Department</a> of the
-          <a href="https://www.caluniv.ac.in/campuses/campus-8.html" target="_blank" rel="noopener noreferrer">University of Calcutta, Kolkata</a>. During my undergraduate studies, I worked under the guidance of
-          <a href="https://sites.google.com/caluniv.ac.in/amlanc-org" target="_blank" rel="noopener noreferrer">Prof. Amlan Chakrabarti</a>.
+          Before joining Stony Brook, I was a Pre-Doctoral Research Fellow in the <a href="https://vgl.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Visualization and Graphics Lab</a> at the <a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>, where I analyzed neural-network loss landscapes using contour trees, join trees, and topological simplification. I also completed a research internship in the <a href="https://miu.isical.ac.in/content/machine-intelligence-unit" target="_blank" rel="noopener noreferrer">Machine Intelligence Unit</a> at the <a href="https://www.isical.ac.in/" target="_blank" rel="noopener noreferrer">Indian Statistical Institute</a>, developing an unsupervised approach for segmenting intersecting manifolds in high-dimensional spaces.
         </p>
         <p>
-          I also completed a research internship at the
-          <a href="https://miu.isical.ac.in/content/machine-intelligence-unit" target="_blank" rel="noopener noreferrer">Machine Intelligence Unit (MIU)</a> of the
-          <a href="https://www2.isical.ac.in/" target="_blank" rel="noopener noreferrer">Indian Statistical Institute (ISI), Kolkata</a>, where I was mentored by
-          <a href="https://isi.irins.org/profile/111427" target="_blank" rel="noopener noreferrer">Prof. Ashish Ghosh</a>.
-        </p>
-        <p>
-          My research interests include Computer Vision, Medical Image Processing, Computational Topology, Explainable AI,and Visualization.
+          I earned my B.Tech. in Information Technology from the <a href="https://www.caluniv.ac.in/academic/akcsit/AKC.html" target="_blank" rel="noopener noreferrer">A.K.C.S.I.T. Department</a> at the <a href="https://www.caluniv.ac.in/" target="_blank" rel="noopener noreferrer">University of Calcutta</a>, where I worked on deep-learning methods for lumbar spine tumor localization and efficient plant-disease detection on resource-constrained devices. Across these experiences, I have built a strong foundation in designing research questions, developing end-to-end machine-learning solutions, evaluating complex models, and communicating technical results. I am particularly interested in opportunities where rigorous AI research can be translated into <strong>high-impact, interpretable, and dependable real-world systems</strong>.
         </p>
       </div>
     </section>
